@@ -1,0 +1,858 @@
+\documentclass{book}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{mathtools,amssymb,amsthm}
+\usepackage{array}
+\usepackage{booktabs}
+
+% https://www.learnlatex.org/en/lesson-10
+
+\begin{document}
+
+%\begin{tabular}{p{3cm}p{10.5cm}}
+%  \toprule
+%  \textbf{Term} & \textbf{Description} \\
+%  \midrule
+%  Sequence    & A series of real numbers resulting from an equation.\\
+%  \bottomrule
+%\end{tabular}
+
+\chapter{Sequences and Series}
+
+\paragraph{Monotony} Compare $a_{n+1}$ with $a_{n}$ to determine (strict) monotonical increase/decrease.
+
+\textbf{Arithmetic sequence:} Constant
+\[
+  d = a_{n+1} - a_{n}
+\]
+
+\textbf{Geometric sequence:} Constant
+\[
+  q = \frac{a_{n+1}}{a_{n}}
+\]
+
+\textbf{Arithmetic series:}
+\[
+  s_{n} = \frac{n}{2}\left(a_{1}+a_{n}\right)
+\]
+
+\textbf{Geometric series:}
+\[
+  s_{n} = a_{1}\cdot\frac{q^{n}-1}{q-1}
+\]
+
+\textbf{Converging geometric series:}
+\[
+  |q| < 1
+\]
+
+\textbf{Limit for converging geometric series:}
+\[
+  \lim\limits_{n\to\infty}s_{n} = \frac{1}{1-q}
+\]
+
+\section{Sequences: Convergence and Monotony}
+\subsection{Sequences}
+\subsubsection{Definitions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Sequence    & A series of real numbers resulting from an equation.\\
+  \midrule
+  Sequence Element    & This is a single number in a sequence.\\
+  \midrule
+  Index       & This is a natural number used to number sequence elements.\\
+  \midrule
+  Fibonacci sequence & The sequence that can be formed recursively with $f_{n} = f_{n-2} + f_{n-1} \,$ for $n>2$ and $f_{1} = 0, f_{2} = 1$\\
+  \midrule
+  Finite Sequence & A finite sequence consists of finitely many and not of infinitely many links.\\
+  \bottomrule
+\end{tabular}
+
+
+\subsection{Monotony and Narrowness}
+\subsubsection{Definitions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Monotonically growing sequence & In a monotonically growing sequence, each subsequent link is greater than or equal to the previous subsequent link.\\
+  \midrule
+  Monotonically decreasing sequence & In a monotonically decreasing sequence, each sequence element is smaller than or equal to the previous sequence element.\\
+  \midrule
+  Constant sequence & In a constant, all sequence elements are equal.\\
+  \midrule
+  Sequence limited upwards & All sequence elements do not become larger than a real number $S$, which forms the upper bound.\\
+  \midrule
+  Downwardly limited sequence & All subsequent elements are not smaller than a real number $s$, which forms the lower bound.\\
+  \bottomrule
+\end{tabular}
+\subsubsection{Monotony}
+Compare the next sequence with the current one: $f(x_{n+1)}$ compared to $f(x_{n)}$.
+
+\begin{tabular}{lp{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  $a_{n+1} \geq a_{n}$    & monotonically increasing\\
+  \midrule
+  $a_{n+1} > a_{n}$    & strictly monotonically increasing\\
+  \midrule
+  $a_{n+1} \leq a_{n}$    & monotonically decreasing\\
+  \midrule
+  $a_{n+1} < a_{n}$    & strictly monotonically increasing\\
+  \midrule
+  $a_{n+1} = a_{n}$    & constant\\
+  \bottomrule
+\end{tabular}
+
+
+\subsection{Convergence and Limit Value}
+\subsubsection{Definitions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Distance & Distance is the unsigned difference between two real numbers.\\
+  \midrule
+  $\epsilon$ environment & An $\epsilon$ environment is the set of all points $x\in\mathbb{R}$, whose distance from a point $a$ is smaller than $a$ given the number $\epsilon$\\
+  \midrule
+  Divergence & If a sequence does not converge, then it is divergent.\\
+  \midrule
+  Arithmetic sequence & Sequence in which the difference of two consecutive links is constant for all links.\\
+  \midrule
+  Geometric sequence & A geometric sequence is given if the quotient of two successive links is constant for all links.\\ 
+  \bottomrule
+\end{tabular}
+\subsubsection{Distance}
+Distance is the unsigned difference between two real numbers.: $|x-a|$
+\subsubsection{$\epsilon$-environment}
+An $\epsilon$-environment is the set of all points $x \in \mathbb{R}$, whose distance from a point $a$ is smaller than $a$ given the number $\epsilon$.
+
+$\epsilon$-environment: $\{x \in \mathbb{R}\,|\,|x-a| < \epsilon\}$
+
+\subsubsection{Convergence}
+
+A sequence $(a_{n})$ is called convergent with limit value $a$ (also called Limes), $a \in \mathbb{R}$, if it applies to almost all sequence members that for all $\epsilon > 0$ always $|a_{n} - a| < \epsilon$ is fulfilled.
+\[
+\lim\limits_{n\to \infty} a_{n} = a
+\]
+\textit{Read:} "The limit of the sequence $(a_{n})$ for $n$ against infinity is equal to $a$."
+\begin{itemize}
+\item Every convergent sequence is limited.
+\item Every limited and monotonous sequence converges.
+\end{itemize}
+\subsubsection{Zero Sequence}
+If the sequence converges to $0$, then it is called a \textbf{divergent}.
+
+\subsubsection{Divergence}
+If the sequence does not converge, then it is divergent.
+
+\[
+\lim\limits_{n\to \infty} a_{n} = \infty
+\]
+
+\subsection{Limit sets}
+\[
+\lim\limits_{n\to \infty} (a_{n} + b_{n}) = \lim\limits_{n\to \infty} a_{n} + \lim\limits_{n\to \infty} b_{n} = a + b
+\]
+\[
+\lim\limits_{n\to \infty} (a_{n} - b_{n}) = \lim\limits_{n\to \infty} a_{n} - \lim\limits_{n\to \infty} b_{n} = a - b
+\]
+\[
+\lim\limits_{n\to \infty} (a_{n} \cdot b_{n}) = \lim\limits_{n\to \infty} a_{n} \cdot \lim\limits_{n\to \infty} b_{n} = a \cdot b
+\]
+\[
+\lim\limits_{n\to \infty}(\frac{a_{n}}{b_{n}}) = \frac{\lim\limits_{n\to \infty} a_{n}}{\lim\limits_{n\to \infty} b_{n}} = \frac{a}{b}, \: b \ne 0, b_{n} \ne 0
+\]
+\[
+\lim\limits_{n\to\infty} (a_{n})^{r} = \left(\lim\limits_{n\to\infty}a_{n}\right)^{r} = a^{r}, r \in \mathbb{R}
+\]
+
+\subsection{Arithmetic and Geometric Sequences}
+\subsubsection{Arithmetic Sequence}
+An arithmetic sequence is a sequence in which the difference of two consecutive links is constant for all links.
+\[
+  d = a_{n+1} - a_{n}
+\]
+Arithmetic sequence, if $d$ is always the same
+
+\subsubsection{Geometric Sequence}
+A geometric sequence is given, the quotient of two successive links is constant for all links.
+\[
+  q = \frac{a_{n+1}}{a_{n}}
+\]
+
+
+\section{Rows: Definitions and Convergence}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Series    & A series is a special sequence that results from the stepwise addition of sequence elements.\\
+  \midrule
+  nth partial sum & This also means $nth$ partial sum of the series. Recursively, the formation of a series can be indicated by $s_{n+1} = s_{n} + a_{n+1}$.\\
+  \midrule
+  Finite series & A finite series is made up of finitely many sequence members $o_{n}$ for $a_{n}\in\mathbb{N}$.\\
+  \midrule
+  Infinite Series & With an infinite series, the summation continues to infinity.\\
+  \bottomrule
+\end{tabular}\\
+
+An infinite series
+\[
+  \sum_{i=1}^{\infty} a_{i}
+\]
+can only converge, if $(a_{n})$ is a zero sequence.
+
+\subsection{Arithmetic Series}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Arithmetic Series & An arithmetic series is the result of the stepwise addition of sequence elements of an arithmetic sequence.\\
+  \bottomrule
+\end{tabular}\\
+
+\[
+  s_{n} = \frac{n}{2}\left(a_{1}+a_{n}\right)
+\]
+
+\subsection{Geometric Series}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Geometric Series & A geometric series results from the stepwise addition of sequence elements of a geometric sequence.\\
+  \bottomrule
+\end{tabular}\\
+
+\[
+  s_{n} = a_{1}\cdot\frac{q^{n}-1}{q-1}
+\]
+
+A geometric series converges exactly when $|q|<0$. For the limit value in this case
+\[
+  \lim\limits_{n\to\infty}s_{n} = \frac{1}{1-q}
+\]
+
+\section{Specific Sequences and Series}
+\subsubsection{Definitions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Euler's constant & The limit value of the sequence $\left(1+\frac{1}{n}\right)^{n}$ for $n$ towards infinity is the Euler constant or number $e = 2.71828...$.\\
+  \midrule
+  Faculty & The faculty assigns to a natural number the product of those natural numbers which are smaller than that number.\\
+  \midrule
+  Leibniz series & A series converging towards $\pi/4$ is called the Leibniz series.\\
+  \midrule
+  Coefficient & The constant factor before a variable is called a coefficient.\\
+  \midrule
+  Polynomial & A polynomial is a sum of terms formed by products of coefficients with powers of a real number $x$ with natural exponents.\\ 
+  \bottomrule
+\end{tabular}
+
+\subsubsection{Euler's constant}
+\[
+  \lim\limits_{n\to\infty}\left(1+\frac{1}{n}\right)^{n}=e
+\]
+
+\[
+  \lim\limits_{n\to\infty}s_{n}=\sum_{k=0}^{\infty}\frac{1}{k!}=e
+\]
+
+\subsection{Limit sets}
+\[
+  \lim\limits_{n\to \infty} \frac{x}{n}=0\text{, for all }x\in\mathbb{R}
+\]
+\[
+  \lim\limits_{n\to \infty} x^n=0\text{, for all }|x|<1
+\]
+\[
+  \lim\limits_{n\to \infty} \sqrt[n]{n}=1\text{, for all }n\in\mathbb{N}
+\]
+\[
+  \lim\limits_{n\to \infty} \sqrt[n]{x}=1\text{, for all }x>1
+\]
+\[
+  \lim\limits_{n\to \infty} \left(1+\frac{1}{n}\right)^n=e
+\]
+\[
+  \lim\limits_{n\to \infty} \left(1+\frac{x}{n}\right)^n=e^x
+\]
+\[
+  \lim\limits_{n\to \infty} \left(1-\frac{1}{n}\right)^n=\frac{1}{e}
+\]
+
+\subsection{Leibniz series}
+A series converging towards $\pi/4$ is called the Leibniz series:
+\[
+  \sum_{k=0}^{\infty}\frac{(-1)^k}{2k+1}\to\frac{\pi}{4}
+\]
+
+\subsection{Power series}
+\[
+  P(x) = \sum_{k=0}^{\infty}a_{k}x^{k}=a_0+a_1x+a_2x^2+a_3x^3+\dots
+\]
+
+\section{Summary}
+In this unit, sequences were first introduced. The individual sequence links are formed according to a law, so that the order of a sequence is fixed. If the sequence were to be changed, another sequence would be created.
+
+If within this order the sequence links become larger and larger with increasing index, the sequence is called (strictly) monotonically growing. If they become smaller and smaller, the sequence is (strictly) monotonically falling. If there is a fixed value that the sequence does not exceed for all indices, the sequence is called restricted upwards. If there is such a barrier, below which no sequence element falls, the sequence is limited downwards. If there is both an upper and a lower limit, the sequence is restricted. If, as the index rises, a sequence keeps approaching a fixed value, which it never quite reaches but never exceeds or falls below, then this sequence converges towards a limit value. For this to happen, an infinite number of sequence elements must lie in an arbitrarily small environment around the limit value, a very small interval. Only a finite number of sequence elements may be outside this environment. If the limit value of two sequences is known, then according to the limit value theorems, the limit value of the sequence composed of the known sequences can also be determined, regardless of whether the composed sequence is the sum, the difference, the product, or the quotient of the known sequences.
+
+If the difference, or distance, between two successive sequence elements is always constant, the sequence is called arithmetic. If, on the other hand, the quotient of two successive sequence elements is always the same, then it is a geometric sequence.
+
+If more and more of the sequence elements are summed up, a new sequence is created from the sums, which is called a series. Each series thus depends on a corresponding sequence. The links of the series form the so-called partial sums. If the corresponding sequence has an infinite number of sequence elements, there are also infinite partial sums and this is called an infinite series. As with the sequences, one is interested in knowing when this infinite series converges, i.e., when it approaches a limit value and does not grow to infinity. A series can only converge if its associated sequence is a zero sequence, i.e., a convergent sequence with a limit value of $0$. However, the reverse is not always true. This means that there can also be series of zero sequences that do not converge.
+
+If the associated sequence is an arithmetic or a geometric sequence, an arithmetic or geometric series is created accordingly.
+
+For a geometric series it is known that it converges exactly when the constant quotient of the sequence is truly less than $1$.
+
+Important figures in the analysis are limit values of sequences and series. Thus, Euler's constant e can be determined as the limit value of a sequence and a series. Also the important type of function of polynomials can be introduced via the partial sums of the power series. Altogether, the consideration of sequences and series forms the basis for many further concepts of analysis.
+
+\chapter{Functions and Reversal Functions}
+\section{Functions and their Properties}
+\subsection{Terms and Definitions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Definition area & The definition area is a set from which elements may be inserted into the function.\\
+  \midrule
+  Argument & An argument (or input value) is an element from the definition area that is inserted into a function.\\
+  \midrule
+  Function value & The function value is an element from the value range that results from applying the function to an input value.\\
+  \midrule
+  Identity & The identity or identity function is the function that each element maps to itself.\\
+  \midrule
+  Constant Function & A constant function maps all arguments to a single element.\\ 
+  \midrule
+  Amount Function & An amount function is a function in which negative input values are mapped to positive function values.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Illustration of Function}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Graph & The graph of a function is an illustration of the point pair $(x, f(x))$ of this function in a coordinate system.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Some elemenentary Functions and Composition}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Linear function & A linear function is a function with the structure: $f:A \to B, f(x) = a \cdot x + b,\, a, b \in\mathbb{R}, x \in A, f(x) \in B$.\\
+  \midrule
+  Quadratic funtions & A quadratic function is a function with the structure: $f: A \to B, f(x) = a \cdot x^2 + b \cdot x + c, \, a, b, c \in \mathbb{R}, \, a \ne 0, \, x \in A, \, f(x) \in B$.\\
+  \midrule
+  Normal parabola & A normal parabola is the simplest quadratic function of the form $f: \mathbb{R} \to \mathbb{R}, \, f(x) = x_2$.\\
+  \midrule
+  Third-degree fully rational function & A third degree fully rational function is a function with the structure: $f:A \to B, \, f(x) = a \cdot x^3 + b \cdot x^2 + c \cdot x + d, \, a,b,c,d \in \mathbb{R},\, a \ne 0, \, x \in A, \, f(x) \in B$.\\
+  \bottomrule
+\end{tabular}
+
+\paragraph{Definition Composition.} Let $A, B, C$ and $D$ be non-empty quantities and $f: A \to B$ and $g: C \to D$ be functions. If for all $x\in A$ it holds that $f(x) \in C$, then the composition of the functions $f$ and $g$ is defined by
+\[
+  g \circ f: A \to D, \, (g \circ f)(x) := g(f(x))
+\]
+Here $g \circ f$ is read as "$g$ composed with $f$" or also as "$g$ after $f$".
+
+\subsection{Properties of Functions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Surjective & A function is surjective if there is at least one input value for each element from the value range $B$.\\
+  \midrule
+  Injective & A function is injective if there are not exactly the same function values for different input values.\\
+  \midrule
+  Bijective & A function is bijectiv, if it is both surjective and injective.\\
+  \midrule
+  Inverse function & The inverse function is the function f-1 to the function f, for which the following applies: $g \circ f = f-1 \circ f = id$ and $f \circ g = f \circ f-1 = id$.\\
+  \bottomrule
+\end{tabular}
+
+\subsubsection{Surjectivity}
+A function $f: A \to B$ is called \textbf{surjective} if at least one $x \in A$ exists for each $y \ in B$ with $y = f(x)$.
+\textbf{Each $y$ has an $x$.}
+
+\subsubsection{Injectivity}
+A function $f: A \to B$ is called \textbf{injective}, if for each two elements $x_1, x_2 \in A$ applies:
+\[
+  f(x_1) = f(x_2) \Rightarrow x_1 = x_2 \text{ or } x_1 \ne x_2 \Rightarrow f(x_1) \ne f(x_2)
+\]
+\textbf{If $y$ the same, then $x$ must be the same. If $x$ different, then $y$ must be different.}
+
+\subsubsection{Bijectivity}
+A function $f: A \to B$ means bijective if the function is both surjective and injective.
+
+\subsubsection{Reverse Functions and Invertibility}
+
+
+\section{Exponential and Logarithmic Functions}
+\subsection{Definitions}
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  General exponential function & A general exponential function is a function of the form $f:\mathbb{R} \to \mathbb{R_+}\backslash \{0\}, \, f(x)=a^x$ with the Euler constant basis $e=2.71828$ and an exponent $x \in \mathbb{R}$.\\
+  \midrule
+  Natural exponential function & The natural exponential function is a function of the form $f:\mathbb{R} \to \mathbb{R_+}\backslash \{0\}, \, f(x)=e^x$ with a constant, positive basis $a \in \mathbb{R}$ and an exponent $x \in \mathbb{R}$.\\
+  \midrule
+  Logarithm function & A logarithm function is a function of the form $g: \mathbb{R_+} \backslash{0} \to \mathbb{R}, \, g(x)=log_{a}x$ with a constant positive base $a \in \mathbb{R}$ and an exponent in $x \in \mathbb{R}$\\
+  \bottomrule
+\end{tabular}
+
+\subsection{General Exponential Functions}
+\[
+  f:\mathbb{R} \to \mathbb{R_+}\backslash \{0\}, \,f(x) = a^x
+\]
+
+\subsection{Monotony of Functions}
+
+As above, compare the results of $x_1 < x_2$
+
+\subsection{Natural Exponential Functions}
+\subsubsection{General}
+\[
+  f:\mathbb{R} \to \mathbb{R_+}\backslash \{0\}, \, f(x)=e^x
+\]
+
+\subsubsection{Eulers constant}
+\[
+  \lim\limits_{n \to \infty} \left(1+\frac{1}{n}\right)^n=e
+\] 
+
+\subsubsection{More general}
+\[
+  \lim\limits_{n \to \infty} \left(1+\frac{a}{n}\right)^n=e^a
+\] 
+
+\subsection{Logarithm Functions}
+Inverse the exponential function to $x$
+\[
+  f(x) = a^x \rightarrow g(x)=log_ax
+\]
+Logarithmic functions are also bijective. For $x>0$:
+\[
+  log_{a}^{(ax)} = x
+\]
+\[
+  a^{log_{a}x}=x
+\]
+
+For the natural exponential function, the natural logarithm is the invese function:
+\[
+  f(x) = e^x \rightarrow g(x)= log_ex=lnx
+\]
+
+
+\section{Trigonometric Functions}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Unit Circle & The unit circle has a radius of 1 and the center is the coordinate origin.\\
+  \midrule
+  Arc sine & The arc sine function is the inverse of the sine function where it is defined.\\
+  \midrule
+  Arc cosine & The arc cosine function is the inverse of the cosine function where it is defined.\\
+  \midrule
+  Arc tangent & The arc tangent is the inverse of the tangent function where it is defined.\\
+  \midrule
+  Arc cotangent & The arc cotangent is the inverse function of the cotangent function where it is defined.\\
+  \bottomrule
+\end{tabular}
+
+\textbf{Functions}
+\[
+  \tan x = \frac{\sin x}{\cos x}
+\]
+
+\[
+  \cot x = \frac{\cos x}{\sin x}
+\]
+
+\section{Summary}
+A function is a mapping rule that uniquely assigns an element from the value range to each element from the definition area. Important functions are the identity function, the constant function, and the amount function. Graphs visualize the point pairs of a function, consisting of input value and function value, in a coordinate system.
+
+Linear and quadratic functions were introduced as elementary functions. If you extend the functions further according to this pattern, you get completely rational functions of degree n, also called polynomial functions. With the help of composition, elementary functions can be combined with other functions as desired.
+
+Important properties such as surjectivity and injectivity determine whether inverse functions exist. If an inverse function has been found, it is unique and also invertible.
+
+The general exponential functions represent another family of functions. The natural exponential function, also called e-function, forms a special case with the base e, Euler’s constant. Exponential functions can be used to describe growth and decay processes. The inverse functions to the exponential functions form the logarithmic functions.
+
+The trigonometric functions assign lengths to angles in the unit circle. Due to their periodicity, the function values of the trigonometric functions repeat themselves again and again and are therefore suitable for modeling completely different relationships than the function families introduced previously.
+
+
+\chapter{Differential Calculus}
+
+\section{First Derivation and Potency Rule}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Difference quotient & The gradient of the secant through points $(x, y)$ and $(x1, y1)$ is called the difference quotient.\\
+  \midrule
+  Secant & The straight line that intersects two points on a curve of the function graph is called a secant.\\
+  \midrule
+  First derivation & The gradient the tangent in a point $(x, y)$ is the first derivative of the function and is also called derivative function.\\
+  \midrule
+  Differentiable & If the differential quotient exists as a limit value and is unique in a point or on an interval, then a function can be differentiated in this point or on the interval.\\
+  \bottomrule
+\end{tabular}
+
+
+\section{Derivation Rules and Higher Derivations}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Summation rule & If a function is made up of several functions as a sum, the individual summands can be derived member by member according to the summation rule.\\
+  \midrule
+  Product rule & If a function as product is composed of two functions, it must be derived according to the product rule.\\
+  \midrule
+  Quotient rule & A function that is a quotient of two functions must be derived according to the quotient rule.\\
+  \midrule
+  Chain rule & To derive composite functions, the derivative of the outer function must be multiplied by the derivative of the inner function.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Summation rule}
+\[
+  f(x) = f_1(x) + f_2(x) \Longrightarrow f'(x)=f_1'(x)+f_2'(x)
+\]
+
+
+\subsection{Product rule}
+\[
+  f(x) = f_1(x) + f_2(x) \Longrightarrow f'(x)=f_1'(x) \cdot f_2(x) + f_1(x) \cdot f_2'(x)
+\]
+
+\subsection{Quotient rule}
+\[
+  f(x) = \frac{f_1(x)}{f_2(x)} \Longrightarrow f'(x) = \frac{f_2(x) \cdot f_1'(x) - f_1(x) \cdot f_2'(x)}{(f_2(x))^2}
+\]
+
+\subsection{Chain rule}
+\[
+  f(x) = (g \circ h)(x) = g(h(x))
+\]
+\[
+  f'(x) = g'(h) \cdot h'(x)
+\]
+
+\section{Taylor Series and Taylor Polynomial}
+
+\subsection{Power series}
+\[
+  P(x) = \sum_{k=0}^{\infty} a_kx^k = a_0 + a_1x^1 + a_2x^2+ \dots
+\]
+
+\subsection{Definition: Taylor series and Taylor polynomial}
+
+For a real-valued function $f$, which can be differentiated infinitely often within its definition range, the expression
+\[
+  T_f(x) := \sum_{k=0}^\infty \frac{f^{(k)}(0)}{k!}x^k
+\]
+
+is a \textbf{Taylor series} of $f$ at the evolution potin $x=0$. The partial sums of the Taylor series
+\[
+  T_{f, n}(x) := \sum_{k=0}^n \frac{f^{(k)}(0)}{k!}x^k
+\]
+are called $nth$ degree Taylor polynomials of $f$.
+
+\textbf{Allgemeine Form}
+\[
+  T_{f, n}(x) := \sum_{k=0}^n \frac{f^{(k)}(b)}{k!}(x-b)^k
+\]
+
+
+\section{Curve Sketching}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Contact points & A pole point is a point of a function for which it is not defined and in whose immediate vicinity the function values run to infinity.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Monotony}
+$f(x)$ is ...
+
+\begin{tabular}{p{6cm}p{7.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Condition} \\
+  \midrule
+  monotonically growing & $f'(x) \ge 0$\\
+  \midrule
+  strictly monotonically growing & $f'(x) > 0$\\
+  \midrule
+  monotonically decreasing & $f'(x) \le 0$\\
+  \midrule
+  strictly monotonically decreasing & $f'(x) <0$\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Symmetry}
+$f(x)$ is ...
+
+\begin{tabular}{p{6cm}p{7.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Condition} \\
+  \midrule
+  (axis-)symmetrical to the y-axis & $f(-x) = f(x)$\\
+  \midrule
+  (point-)symmetrical to the origin & $f(-x) = -f(x)$\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Extreme values}
+$f(x)$ has at $x_0$...
+
+\begin{tabular}{p{6cm}p{7.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Condition} \\
+  \midrule
+  extreme value & $f'(x_0) = 0$\\
+  \midrule
+  local maximum (high point)& $f'(x_0) = 0 \;\land f''(x_0)<0$\\
+  \midrule
+  local minimum (low point)& $f'(x_0) = 0 \;\land f''(x_0)>0$\\
+  \midrule
+  saddle point & $f'(x_0) = f''(x_0) = 0 \;\land f'''(x_0)\ne0$\\
+  \bottomrule
+\end{tabular}
+
+
+\subsection{Check list}
+\begin{enumerate}
+  \item{Definition range}
+  \item{Symmetries}
+  \item{Zero points}
+  \item{Poles}
+  \item{Limit behavior}
+  \item{Turning points}
+\end{enumerate}
+
+\section{Outlook: Partial Derivatives}
+
+\subsection{Definitions}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  First-order partial derivative & In a first-order partial derivative, a function with several variables is derived in a certain direction.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Partial derivation}
+
+\[
+  \frac{\delta f}{\delta x_1} = \frac{\delta}{\delta x_1}f = f'_{x1}
+\]
+
+\subsection{Summary}
+
+In this lesson the difference quotient was introduced as the slope of the secant between two points of a function. If these two points approach each other more and more, the secant becomes a tangent at only one point of the function. The slope of this tangent is calculated with the differential quotient and is also called the first derivative of the function.
+
+Subsequently the derivatives of many elementary functions were given. In order to be able to derive complex or compound functions, the sum, product, quotient and chain rules were introduced.
+
+By repeated derivation you get the higher derivatives of the function. With the help of these, trigonometric functions, for example, can be represented by polynomial functions, which makes the calculation in pocket calculators, for example, less complicated. The Taylor series and Taylor polynomials were introduced for this purpose.
+
+Finally, curve sketching introduced a set of instruments that can be used to determine the behavior of any function on the essential points.
+
+
+
+\chapter{Integral Calculus}
+
+\section{The Indefinite Integral and Integration Rules}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Integrate & If you integrate a function $f$ and then differentiate it, you get the output function $f$ again.\\
+  \midrule
+  Integration constant & Except for this real constant $C$, the root function is unique.\\
+  \midrule
+  Undefined integral of the function $f$ & The set of all primitive functions of $f$ forms the indefinite integral of the funtion $f$.\\
+  \midrule
+  Stead & The graph of a continuous curve within the definition range.\\
+  \bottomrule
+\end{tabular}
+
+\subsubsection{Indefinite integral of the function $f$}
+
+\[
+  \int f(x)dx = F(x)+C
+\]
+
+\subsection{Integration Rules}
+
+\subsubsection{Factor rule}
+
+Constant factors are retained
+
+\[
+  \int a \; f(x)dx = a \int f(x)dx
+\]
+
+\subsubsection{Total integration link by link}
+
+\[
+  \int (f(x) + g(x))dx = \int f(x)dx + \int g(x)dx
+\]
+
+\subsubsection{Integration rules}
+
+\[
+  \int a \; dx = a \int 1 \; dx = ax + C \text{ for } A, C  \in \mathbb{R} 
+\]
+
+\[
+  \int x^adx = \frac{1}{a+1}x^{a+1} + C \text{ for } a, C \in \mathbb{R}, a \ne -1
+\]
+
+\[
+  \int e^x \; dx = e^x + C \text{ for } C \in \mathbb{R}
+\]
+
+\[
+  \int e^{ax} \; dx = \frac{1}{a}e^{ax} + C \text{ for } a, C \in \mathbb{R}, a \ne 0
+\]
+
+\[
+  \int a^x \; dx = \frac{1}{\ln a}a^x + C \text{ for } a > 0, a \ne 1, C \in \mathbb{R}
+\]
+
+\[
+  \int \frac{1}{x}\; dx = \ln |x| + C \text{ for } C \in\mathbb{R}
+\]
+
+\subsubsection{Chain rule}
+\[
+  \int \frac{f'(x)}{f(x)}dx = \ln|f(x)| + C, C \in \mathbb{R}
+\]
+
+\subsubsection{Partial integration}
+\[
+  \int (f(x) \cdot g(x))'\; dx = \int f'(x) \cdot g(x) \; dx + \int f(x) \cdot g'(x) \; dx
+\]
+\[
+  \int (f(x) \cdot g(x))' \; dx = f(x) \cdot g(x)
+\]
+\[
+  \Longrightarrow \int f(x) \cdot g'(x)\; dx = f(x) \cdot g(x) - \int f'(x) \cdot g(x) \; dx
+\]
+
+
+\section{The Definite Integral and the Law of Differentials and Integrals}
+
+
+\subsection{Definitions}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Determined integral & Over an interval with the limits $a$ and $b$, an indefinite becomes a definite integral, which corresponds to the content of the area enclosed by the function graph and the $x-axis$ between the interval limits.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Main Theorem of Differential and Integral Calculus}
+
+The area $A$ between the function graph of the function $f(x)$ and the $x-axi$ is calculated according to the law of differential and integral calculs from the determined integral of the function $f(x)$:
+
+\[
+  A = \int_a^b f(x)dx = [F(x)_a^b-F(b)-F(a)]
+\]
+
+\textit{"Integral from $a$ to $b$ via the function $f$ of $x\; dx$"}
+
+It is assumed that $f(x)$ is defined over the whole interval $[a,b]$ and is continuous.
+
+\subsubsection{Factor rule}
+A constant factor  $c \ in \mathbb{R}$ can be drawn before the integral:
+
+\[
+  \int_a^b c \cdot f(x)dx = c \cdot \int_a^b f(x) dx
+\]
+
+\subsubsection{Summation rule}
+A finite sum of functions can be integrated member by member.
+
+\[
+  \int_a^b (f_1(x) + f_2(x) + \dots +f_n(x))dx = \int 
+\]
+
+\subsubsection{Exchanging rule}
+
+If the two integration limits are exchanged, the sign of the integral changes:
+\[
+  \int_a^b f(x)dx = - \int_b^a f(x)dx
+\]
+
+\subsubsection{Decomposition rule}
+
+If the integration interval $[a, b]$ is divided into two partial areas at the position $c$, so that $a \le c \le b$ then the following applies:
+\[
+  \int_a^b f(x)dx = \int_a^c f(x)dx + \_c^b f(x) dx
+\]
+
+
+\section{Volume and Lateral Surface of Bodies of Revolution and Arc Length}
+
+\subsection{Definitions}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Body of revolution & A body that is created when a surface rotates around the x-axis is called a rotational body.\\
+  \bottomrule
+\end{tabular}
+
+\subsection{Formulas}
+
+\subsubsection{Volume}
+
+\[
+  V= \pi \cdot \int_a^b(f(x))^2 dx
+\]
+
+\subsubsection{Arc length}
+
+\[
+  L = \int_a^b \sqrt{1+(f'(x))^2} dx
+\]
+
+\subsubsection{Lateral surface}
+\[
+  M = 2\pi \int_a^b f(x) \sqrt{1+(f(x))^2}dx
+\]
+
+\chapter{Differential equations}
+
+\section{Introduction and Basic Terms}
+
+\section{Solution of First-Order Linear Homogeneous Differential Equations}
+
+\section{Solution of First-Order Linear Non-homogeneous Differential Equations}
+
+\section{Outlook: Partial Differential Equations}
+
+\end{document}
