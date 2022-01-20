@@ -834,25 +834,92 @@ If the integration interval $[a, b]$ is divided into two partial areas at the po
   V= \pi \cdot \int_a^b(f(x))^2 dx
 \]
 
+\[
+  V = \pi \int f^2
+\]
+
 \subsubsection{Arc length}
 
 \[
   L = \int_a^b \sqrt{1+(f'(x))^2} dx
 \]
 
+\[
+  L = \int \sqrt{(1+f')^2}
+\]
+
 \subsubsection{Lateral surface}
 \[
-  M = 2\pi \int_a^b f(x) \sqrt{1+(f(x))^2}dx
+  M = 2\pi \int_a^b f(x) \sqrt{1+(f'(x))^2}dx
+\]
+
+\[
+  M = 2 \pi \int f \cdot \sqrt{(1+ f')2}
 \]
 
 \chapter{Differential equations}
 
 \section{Introduction and Basic Terms}
 
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Differential equation & A differential equation is an equation that establishes a relationship between a function and its derivatives.\\
+  \midrule
+  Order of a differential equation & The highest derivative occurring in a differential equation determines its order.\\
+  \bottomrule
+\end{tabular}
+
+
 \section{Solution of First-Order Linear Homogeneous Differential Equations}
+
+\begin{tabular}{p{3cm}p{10.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Description} \\
+  \midrule
+  Linear differential equation & In a linear differential equation, the function and its derivatives are only linear.\\
+  \midrule
+  Homogeneous differential equation & On the "right side" of a homogeneous differential equation is a zero.\\
+  \midrule
+  General solutions & A general solution is the set of functions which solves the differential equation.\\
+  \midrule
+  Direction field & A direction field is a sketch of the set of functions, in which it is graphically illustrated by indicating the direction of the functions of the general solution.\\
+  \midrule
+  Special solution & By specifying an initial condition, a function that fulfills the initial condition is determined from the set of functions.\\
+  \bottomrule
+\end{tabular}
+
+\subsubsection{First-order linear homogeneous differential equation}
+\[
+  y'(x) + c(x) \cdot y(x) = 0
+\]
+
+\subsubsection{First-order linear differential equation}
+\[
+  y'(x) + c(x) \cdot y(x) = s(x)
+\]
 
 \section{Solution of First-Order Linear Non-homogeneous Differential Equations}
 
+\[
+  y(x) = y_h(x) + y_s(x)
+\]
+
 \section{Outlook: Partial Differential Equations}
+
+\section{Summary}
+
+In this lesson differential equations were introduced. These are equations where there is a relationship between a function and its derivatives. The solutions of differential equations are not numbers but functions.
+
+It is an ordinary differential equation if it depends on only one variable. The order of a differential equation is determined by the highest derivative that occurs in the equation.
+
+Differential equations are indispensable in the modeling of real properties and their changes in physics, chemistry, engineering or economics. With their help a multitude of processes can be mathematically described and solved. Some problems can be solved explicitly, others only approximately with numerical methods.
+
+Easily-solvable are linear homogeneous differential equations of the first order. Homogeneous means that there is a zero on the right side of the differential equation. If the value of zero is different from zero, we speak of non-homogeneous differential equations.
+
+The solution of these simple differential equations is achieved by integration and the application of integration rules. A general solution of a differential equation is understood to be a set of functions which, except for a constant factor, specifies the type of solution. The set of functions can be sketched in a directional field. If an initial condition is given, it is possible to determine a special solution for which alone the initial condition is exactly fulfilled.
+
+To solve a linear non-homogeneous differential equation of the first order, the general solution of the corresponding homogeneous equation can be used. If a special solution of the non-homogeneous differential equation is added to this, the general solution of the non-homogeneous equation is obtained. With an non-homogeneous differential equation, for example, processes with limited growth, which are thus subject to an upper or lower bound, can be modeled and solved.
 
 \end{document}
