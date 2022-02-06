@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.8)  6 FEB 2022 14:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.1.8)  6 FEB 2022 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -255,122 +255,124 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 22.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (39.08073pt too wide) in paragraph at lines 22--23
+Overfull \hbox (75.11217pt too wide) in paragraph at lines 22--37
+[] 
+ []
+
+[1
+
+
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (39.08073pt too wide) in paragraph at lines 78--79
  \T1/cmr/bx/n/10 Monotony[] \T1/cmr/m/n/10 Com-pare $\OML/cmm/m/it/10 a[]$ \T1/
 cmr/m/n/10 with $\OML/cmm/m/it/10 a[]$ \T1/cmr/m/n/10 to de-ter-mine (strict) m
 ono-ton-i-cal in-crease/decrease. 
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 57--72
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 83--98
 [] 
  []
 
 
-Underfull \vbox (badness 3229) has occurred while \output is active []
-
- [1
-
-
-{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 80--80
+Underfull \hbox (badness 10000) in paragraph at lines 106--106
 []|\T1/cmr/m/n/10 Monotonically
  []
 
 
-Underfull \hbox (badness 5893) in paragraph at lines 82--82
+Underfull \hbox (badness 5893) in paragraph at lines 108--108
 []|\T1/cmr/m/n/10 Monotonically de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 86--86
+Underfull \hbox (badness 10000) in paragraph at lines 112--112
 []|\T1/cmr/m/n/10 Sequence lim-ited
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 114--114
 []|\T1/cmr/m/n/10 Downwardly lim-
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 76--91
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 102--117
 [] 
  []
 
 
-Overfull \hbox (37.67065pt too wide) in paragraph at lines 94--109
+Overfull \hbox (37.67065pt too wide) in paragraph at lines 120--135
 [][] 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--123
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 149--149
 []|\T1/cmr/m/n/10 Arithmetic se-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 125--125
+Underfull \hbox (badness 10000) in paragraph at lines 151--151
 []|\T1/cmr/m/n/10 Geometric se-
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 113--128
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 139--154
 [] 
  []
 
-[2] [3]
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 203--216
-[] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 203--216
-
- []
-
-[4]
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 224--231
+[3] [4]
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 229--242
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 224--231
+Underfull \hbox (badness 10000) in paragraph at lines 229--242
 
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 237--244
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 250--257
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 237--244
+Underfull \hbox (badness 10000) in paragraph at lines 250--257
 
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 256--271
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 263--270
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--270
+
+ []
+
+
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 282--297
 [] 
  []
 
 [5] [6] [7] [8]
 Chapter 2.
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 333--350
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 359--376
 [] 
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 352--359
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 378--385
 [] 
  []
 
 
-Underfull \hbox (badness 5741) in paragraph at lines 371--371
+Underfull \hbox (badness 5741) in paragraph at lines 397--397
 []|\T1/cmr/m/n/10 Third-degree fully
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 361--374
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 387--400
 [] 
  []
 
@@ -380,27 +382,27 @@ Underfull \vbox (badness 2865) has occurred while \output is active []
  [9
 
 ]
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 382--395
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 408--421
 [] 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 419--419
+Underfull \hbox (badness 10000) in paragraph at lines 445--445
 []|\T1/cmr/m/n/10 General ex-po-nen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 447--447
 []|\T1/cmr/m/n/10 Natural ex-po-nen-
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 415--426
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 441--452
 [] 
  []
 
 [11]
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 473--488
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 499--514
 [] 
  []
 
@@ -409,76 +411,76 @@ Overfull \hbox (63.1122pt too wide) in paragraph at lines 473--488
 ]
 Chapter 3.
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 514--527
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 540--553
 [] 
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 531--544
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 557--570
 [] 
  []
 
 [15]
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 597--604
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 623--630
 [] 
  []
 
 [16]
-Overfull \hbox (78.11218pt too wide) in paragraph at lines 608--621
+Overfull \hbox (78.11218pt too wide) in paragraph at lines 634--647
 [][] 
  []
 
 
-Overfull \hbox (78.11218pt too wide) in paragraph at lines 625--634
+Overfull \hbox (78.11218pt too wide) in paragraph at lines 651--660
 [][] 
  []
 
 
-Overfull \hbox (78.11218pt too wide) in paragraph at lines 638--651
+Overfull \hbox (78.11218pt too wide) in paragraph at lines 664--677
 [][] 
  []
 
 [17]
-Underfull \hbox (badness 4441) in paragraph at lines 671--671
+Underfull \hbox (badness 4441) in paragraph at lines 697--697
 []|\T1/cmr/m/n/10 First-order par-tial
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 667--674
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 693--700
 [] 
  []
 
 [18]
 Chapter 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--703
+Underfull \hbox (badness 10000) in paragraph at lines 729--729
 []|\T1/cmr/m/n/10 Integration con-
  []
 
 
-Underfull \hbox (badness 2376) in paragraph at lines 705--705
+Underfull \hbox (badness 2376) in paragraph at lines 731--731
 []|\T1/cmr/m/n/10 Undefined in-te-gral
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 697--710
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 723--736
 [] 
  []
 
 [19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 785--785
+Underfull \hbox (badness 10000) in paragraph at lines 811--811
 []|\T1/cmr/m/n/10 Determined in-te-
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 781--788
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 807--814
 [] 
  []
 
 [20]
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 834--841
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 860--867
 [] 
  []
 
@@ -491,27 +493,27 @@ TEGRALS \T1/cmr/m/n/10 21
 [21] [22]
 Chapter 5.
 
-Underfull \hbox (badness 10000) in paragraph at lines 881--881
+Underfull \hbox (badness 10000) in paragraph at lines 907--907
 []|\T1/cmr/m/n/10 Differential equa-
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 877--886
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 903--912
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 894--894
+Underfull \hbox (badness 10000) in paragraph at lines 920--920
 []|\T1/cmr/m/n/10 Linear dif-fer-en-tial
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 896--896
+Underfull \hbox (badness 10000) in paragraph at lines 922--922
 []|\T1/cmr/m/n/10 Homogeneous dif-
  []
 
 
-Overfull \hbox (63.1122pt too wide) in paragraph at lines 890--905
+Overfull \hbox (63.1122pt too wide) in paragraph at lines 916--931
 [] 
  []
 
@@ -521,7 +523,7 @@ Underfull \vbox (badness 4254) has occurred while \output is active []
  [23
 
 ]
-Overfull \hbox (24.83679pt too wide) in paragraph at lines 916--916
+Overfull \hbox (24.83679pt too wide) in paragraph at lines 942--942
 []\T1/cmr/bx/n/14.4 Solution of First-Order Lin-ear Non-homogeneous
  []
 
@@ -529,7 +531,7 @@ Overfull \hbox (24.83679pt too wide) in paragraph at lines 916--916
 Here is how much of TeX's memory you used:
  3572 strings out of 478353
  53814 string characters out of 5848087
- 360142 words of memory out of 5000000
+ 359142 words of memory out of 5000000
  21674 multiletter control sequences out of 15000+600000
  415449 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -542,22 +544,23 @@ onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2021/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2021/texmf-dist/font
 s/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2021/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type
-1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/
-public/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publ
-ic/cm-super/sfbx2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public
-/cm-super/sfbx2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/c
-m-super/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-
-super/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-su
-per/sfti1000.pfb>
-Output written on "Jochens Analysis Equations.pdf" (25 pages, 286789 bytes).
+pe1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/p
+ublic/cm-super/sfbx1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/pub
+lic/cm-super/sfbx1200.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/publi
+c/cm-super/sfbx1440.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
+cm-super/sfbx2074.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm
+-super/sfbx2488.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-s
+uper/sfrm1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-sup
+er/sfsl1000.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super
+/sfti1000.pfb>
+Output written on "Jochens Analysis Equations.pdf" (25 pages, 295856 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 112 compressed objects within 2 object streams
+ 181 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

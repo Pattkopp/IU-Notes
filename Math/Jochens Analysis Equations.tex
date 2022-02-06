@@ -19,7 +19,21 @@
 
 \chapter{Sequences and Series}
 
-\paragraph{Monotony} Compare $a_{n+1}$ with $a_{n}$ to determine (strict) monotonical increase/decrease.
+\begin{tabular}{p{2.5cm}p{5.5cm}p{5.5cm}}
+  \toprule
+  \textbf{Term} & \textbf{Arithmetic} & \textbf{Geometric}\\
+  \midrule
+  Constant & $d = a_{n+1} - a_{n}$ & $q = \frac{a_{n+1}}{a_{n}}$ \\
+  \midrule
+  Contruction & $a_n = a_1 + (n-1) \cdot d$ & $a_n = a_1 \cdot q^{n-1}$ \\
+  \midrule
+  Series & $s_{n} = \frac{n}{2}\left(a_{1}+a_{n}\right)$ & $s_{n} = a_{1}\cdot\frac{q^{n}-1}{q-1}$ \\
+  \midrule
+  Convergence & & $|q| < 1$ \\
+  \midrule
+  Limit & & $\lim\limits_{n\to\infty}s_{n} = \frac{1}{1-q}$ \\
+  \bottomrule\\
+\end{tabular}
 
 \textbf{Arithmetic sequence:} Constant
 \[
@@ -29,6 +43,16 @@
 \textbf{Geometric sequence:} Constant
 \[
   q = \frac{a_{n+1}}{a_{n}}
+\]
+
+\textbf{Arithmetic sequence construction}
+\[
+  a_n = a_1 + (n-1) \cdot d
+\]
+
+\textbf{Geometric sequence contruction}
+\[
+  a_n = a_1 \cdot q^{n-1}
 \]
 
 \textbf{Arithmetic series:}
@@ -50,6 +74,8 @@
 \[
   \lim\limits_{n\to\infty}s_{n} = \frac{1}{1-q}
 \]
+
+\paragraph{Monotony} Compare $a_{n+1}$ with $a_{n}$ to determine (strict) monotonical increase/decrease.
 
 \section{Sequences: Convergence and Monotony}
 \subsection{Sequences}

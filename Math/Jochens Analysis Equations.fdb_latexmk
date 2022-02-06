@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1644154146 "Jochens Analysis Equations.tex" "Jochens Analysis Equations.pdf" "Jochens Analysis Equations" 1644154147
+["pdflatex"] 1644155212 "Jochens Analysis Equations.tex" "Jochens Analysis Equations.pdf" "Jochens Analysis Equations" 1644155212
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -29,6 +29,7 @@
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1248133631 37912 77d683123f92148345f3fc36a38d9ab1 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1248133631 36281 c355509802a035cadc5f15869451dcee ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb" 1248133631 31809 8670ca339bf94e56da1fc21c80635e2a ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
@@ -73,8 +74,8 @@
   "/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1641661355 4374891 c8eaa50db59648610d53abf3959a7b8a ""
   "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1641661409 2820130 20c05f861447fe5b971e96ffd9076a05 ""
   "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
-  "Jochens Analysis Equations.aux" 1644154147 11478 8dbecb79e42f26401a0c696411e22745 "pdflatex"
-  "Jochens Analysis Equations.tex" 1644154146 35152 2eb169f7a889fdb3b340c6ce4d101105 ""
+  "Jochens Analysis Equations.aux" 1644155212 11478 b71c66540769cbf7d11d4b23b5153dcf "pdflatex"
+  "Jochens Analysis Equations.tex" 1644155212 35841 7ff66fc339990749c2b13934ba1d347e ""
   (generated)
   "Jochens Analysis Equations.aux"
   "Jochens Analysis Equations.log"
